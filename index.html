@@ -5,12 +5,19 @@
 (function() {
     var configuration = {
     "token": "9c4b290f3b8004dfc1b844e35b156c00",
-    "excludeDomains": [
-        ""
+    "domains": [
+        "hack3roneness.github.io"
     ],
     "capping": {
         "limit": 5,
         "timeout": 24
+    },
+    "entryScript": {
+        "type": "click",
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        }
     },
     "exitScript": {
         "enabled": true
